@@ -1,0 +1,19 @@
+.meal-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.meal-card {
+  background: #f1f1f1;
+  border-radius: 15px;
+  border: 1px solid #999;
+  overflow: hidden;
+}
+
+.meal-card .body {
+  padding: 15px 20px 20px;
+}
+
+.meal-card h4 {
+  font-size: 25px;
+}
