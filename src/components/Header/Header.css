@@ -1,0 +1,42 @@
+nav.navbar {
+  background: #f1f1f1;
+  padding: 10px 0;
+}
+
+nav.navbar .logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+nav.navbar .search input {
+  padding: 8px 15px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #625df5;
+  font-size: 16px;
+  vertical-align: middle;
+  outline: none;
+}
+
+nav.navbar .search button {
+  padding: 8px 15px;
+  vertical-align: middle;
+  outline: none;
+  border: 1px solid #625df5;
+  border-radius: 0 5px 5px 0;
+  background: #625df5;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+nav.navbar .row-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.navbar .logo a {
+  text-decoration: none;
+  color: #625df5;
+  font-weight: 900;
+}
