@@ -1,24 +1,21 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect, useState } from "react";
 import MealCard from "../MealCard/MealCard";
 import "./MealContainer.css";
 
-const MealContainer = () => {
-  const [meals, setMeals] = useState([]);
-
-  useEffect(() => {
-    fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=a")
-      .then((res) => res.json())
-      .then((data) => setMeals(data.meals));
-  }, []);
-
+const MealContainer = ({ meals }) => {
   return (
     <section className="main-container">
       <div className="container">
+        <h3>Total Meal: ({meals?.length ? meals.length : 0})</h3>
         <div className="meal-grid">
-          {meals.map((meal) => (
-            <MealCard meal={meal} key={meal.idMeal}></MealCard>
-          ))}
+          {meals?.length !== 0 &&
+            meals?.map((meal) => (
+              <MealCard meal={meal} key={meal.idMeal}></MealCard>
+            ))}
         </div>
+        <p style={{ fontSize: "20px", textAlign: "center" }}>
+          {meals?.length === undefined && "No meal found"}
+        </p>
       </div>
     </section>
   );
