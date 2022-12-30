@@ -17,3 +17,14 @@
 .meal-card h4 {
   font-size: 25px;
 }
+.meal-card h4 span {
+  float: right;
+  vertical-align: middle;
+  color: #625df5;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.meal-card h4 span:hover {
+  transform: scale(1.2);
+}
